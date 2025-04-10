@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Design Space – Portfolio of [Your Name], aspiring architect and designer.">
+  <meta name="keywords" content="Architecture, Portfolio, Design, Urban, Studio, Space, India">
+  <meta name="author" content="[Your Name]">
+  <meta property="og:title" content="Design Space – [Your Name]">
+  <meta property="og:description" content="A creative portfolio space for architecture and design.">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>Design Space</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Design Space</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="toggleDarkMode" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <section id="home" class="section">
+    <div class="home-content">
+      <h2>Welcome to Design Space</h2>
+      <div class="buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Visit Site</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We are passionate creators of beautiful and functional spaces. At Design Space, we believe architecture is more than just building—it's storytelling through structure.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,1" alt="Project 1"></div>
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,2" alt="Project 2"></div>
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,3" alt="Project 3"></div>
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,4" alt="Project 4"></div>
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,5" alt="Project 5"></div>
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,6" alt="Project 6"></div>
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,7" alt="Project 7"></div>
+      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,8" alt="Project 8"></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,1" alt="Gallery Image 1"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,2" alt="Gallery Image 2"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,3" alt="Gallery Image 3"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,4" alt="Gallery Image 4"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,5" alt="Gallery Image 5"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,6" alt="Gallery Image 6"></div>
+	<div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,7" alt="Gallery Image 7"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,8" alt="Gallery Image 8"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,9" alt="Gallery Image 9"></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,10" alt="Gallery Image 10"></div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-content">
+      <p><strong>Phone:</strong> +91 9876543210</p>
+      <p><strong>Email:</strong> <a href="mailto:contact@designspace.com">contact@designspace.com</a></p>
+      <p><strong>Office Hours:</strong> Mon–Fri, 10AM–6PM</p>
+      <p><strong>Address:</strong> 123, Creative Lane, Architecture City, India</p>
+      <form action="https://formspree.io/f/yourFormID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+        <textarea name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
+        <button type="submit" aria-label="Send Message">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Connect with me:</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:youremail@example.com">Email</a>
+    </div>
+    <p>© 2025 Design Space | Built with clarity and character.</p>
+  </footer>
+
+  <button id="scrollToTop" aria-label="Back to top">↑</button>
+
+  <script>
+    const scrollBtn = document.getElementById("scrollToTop");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
+      }
+
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll("nav a");
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    };
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    const toggleBtn = document.getElementById("toggleDarkMode");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
