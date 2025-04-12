@@ -14,10 +14,12 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <title>Design Space</title>
   <link rel="stylesheet" href="style.css" />
+<div id="scroll-progress"></div>
+
 </head>
 <body>
   <header>
-    <h1>Design Space</h1>
+    <h1>A Square</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -32,7 +34,7 @@
 
   <section id="home" class="section">
     <div class="home-content">
-      <h2>Welcome to Design Space</h2>
+      <h2>Welcome to A Square</h2>
       <div class="buttons">
         <a href="#projects" class="btn">View Projects</a>
         <a href="#contact" class="btn">Visit Site</a>
@@ -42,69 +44,105 @@
 
   <section id="about" class="section">
     <h2>About Us</h2>
-    <p>We are passionate creators of beautiful and functional spaces. At Design Space, we believe architecture is more than just building—it's storytelling through structure.</p>
+    <p>For over two decades, Design Space has stood as a pillar of architectural excellence—shaping skylines, inspiring communities, and setting new benchmarks in design and construction.
+
+Rooted in creativity and built on craftsmanship, we are more than just an architecture firm—we are storytellers of space, sculptors of structure, and stewards of legacy. Our journey began twenty years ago, with a mission to transform visions into enduring realities.
+
+With a strong foundation in both design and build, we don’t just sketch ideas—we execute them with precision. From the first blueprint to the final brick, our integrated approach ensures that every space we create is not only aesthetically compelling, but structurally sound and sustainably executed.
+
+Our in-house construction team brings designs to life with unmatched quality and commitment, making us a one-stop destination for architecture, interior design, and turnkey project delivery.
+
+As pioneers in the city’s ever-evolving architectural narrative, we continue to innovate, build, and inspire.
+
+Welcome to Design Space—where imagination meets execution, and every creation is built to last.</p>
   </section>
 
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,1" alt="Project 1"></div>
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,2" alt="Project 2"></div>
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,3" alt="Project 3"></div>
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,4" alt="Project 4"></div>
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,5" alt="Project 5"></div>
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,6" alt="Project 6"></div>
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,7" alt="Project 7"></div>
-      <div class="project-item"><img src="https://source.unsplash.com/400x300/?architecture,8" alt="Project 8"></div>
+      <div class="project-item"><img src="images/IMG-20231023-WA0184.jpg" alt="Eminent Square"></div>
+      <div class="project-item"><img src="images/Pride.png" alt="Eminent Pride"></div>
+      <div class="project-item"><img src="images/CAM_02_DAY.jpg" alt="Alankruti"></div>
+   
     </div>
   </section>
 
-  <section id="gallery" class="section">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,1" alt="Gallery Image 1"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,2" alt="Gallery Image 2"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,3" alt="Gallery Image 3"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,4" alt="Gallery Image 4"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,5" alt="Gallery Image 5"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,6" alt="Gallery Image 6"></div>
-	<div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,7" alt="Gallery Image 7"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,8" alt="Gallery Image 8"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,9" alt="Gallery Image 9"></div>
-      <div class="gallery-item"><img src="https://source.unsplash.com/300x300/?modern-building,10" alt="Gallery Image 10"></div>
+<!-- Inside #gallery section -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="images/Alankruti Latest View.jpg" alt="Gallery Image 1" class="gallery-image" onclick="openLightbox(this.src); currentSlide(1)"></div>
+    <div class="gallery-item"><img src="images/CAM_01_NIGHT.jpg" alt="Gallery Image 2" class="gallery-image" onclick="openLightbox(this.src); currentSlide(2)"></div>
+    <div class="gallery-item"><img src="images/CAM_02_DAY.jpg" alt="Gallery Image 3" class="gallery-image" onclick="openLightbox(this.src); currentSlide(3)"></div>
+    <div class="gallery-item"><img src="images/CAM_03_DAY.jpg" alt="Gallery Image 4" class="gallery-image" onclick="openLightbox(this.src); currentSlide(4)"></div>
+    <div class="gallery-item"><img src="images/IMG-20231023-WA0184.jpg" alt="Gallery Image 5" class="gallery-image" onclick="openLightbox(this.src); currentSlide(5)"></div>
+    <div class="gallery-item"><img src="images/IMG-20231023-WA0185.jpg" alt="Gallery Image 6" class="gallery-image" onclick="openLightbox(this.src); currentSlide(6)"></div>
+    <div class="gallery-item"><img src="images/IMG-20231023-WA0187.jpg" alt="Gallery Image 7" class="gallery-image" onclick="openLightbox(this.src); currentSlide(7)"></div>
+    <div class="gallery-item"><img src="images/IMG-20231023-WA0188.jpg" alt="Gallery Image 8" class="gallery-image" onclick="openLightbox(this.src); currentSlide(8)"></div>
+    <div class="gallery-item"><img src="images/mar1124_01a copy (1).png" alt="Gallery Image 9" class="gallery-image" onclick="openLightbox(this.src); currentSlide(9)"></div>
+    <div class="gallery-item"><img src="images/Pride.png" alt="Gallery Image 10" class="gallery-image" onclick="openLightbox(this.src); currentSlide(10)"></div>
+  </div>
 
+  <!-- ✅ Only one correct Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-image" src="" alt="Expanded view">
     </div>
-  </section>
+  </div>
+</section>
+
+
+  
 
   <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="contact-content">
-      <p><strong>Phone:</strong> +91 9876543210</p>
-      <p><strong>Email:</strong> <a href="mailto:contact@designspace.com">contact@designspace.com</a></p>
+  <h2>Contact</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +91 902874004</p>
+      <p><strong>Email:</strong> <a href="mailto:asquare@nmjworks.com">asquare@nmjworks.com</a></p>
       <p><strong>Office Hours:</strong> Mon–Fri, 10AM–6PM</p>
-      <p><strong>Address:</strong> 123, Creative Lane, Architecture City, India</p>
-      <form action="https://formspree.io/f/yourFormID" method="POST">
-        <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+      <p><strong>Address:</strong> Sushila Apartment, 13th Lane, Rajarampuri, Kolahpur - 416008 </p>
+    </div>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xldjaalj" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+        </div>
         <textarea name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
         <button type="submit" aria-label="Send Message">Send Message</button>
       </form>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <footer class="footer">
-    <p>Connect with me:</p>
+    <p>Connect with us:</p>
     <div class="social-icons">
       <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:youremail@example.com">Email</a>
     </div>
-    <p>© 2025 Design Space | Built with clarity and character.</p>
+    <p>© 2025 A Square | Built with clarity and character.</p>
   </footer>
 
   <button id="scrollToTop" aria-label="Back to top">↑</button>
 
   <script>
+function openLightbox(src) {
+  const lightbox = document.getElementById('lightbox-modal');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightbox.style.display = 'flex';
+  lightboxImg.src = src;
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox-modal').style.display = 'none';
+}
+
     const scrollBtn = document.getElementById("scrollToTop");
     window.onscroll = function () {
       if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -135,10 +173,97 @@
     });
 
     const toggleBtn = document.getElementById("toggleDarkMode");
+
+    // Load saved mode on page load
+    window.onload = () => {
+      const darkMode = localStorage.getItem("darkMode");
+      if (darkMode === "enabled") {
+        document.body.classList.add("dark-mode");
+        toggleBtn.innerHTML = "☀️";
+      }
+    };
+
     toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
-      toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+      const darkEnabled = document.body.classList.contains("dark-mode");
+      toggleBtn.innerHTML = darkEnabled ? "☀️" : "🌙";
+      localStorage.setItem("darkMode", darkEnabled ? "enabled" : "disabled");
     });
+
+    // Lightbox script
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox .close");
+
+    document.querySelectorAll(".gallery-item img").forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+// Select all sections and nav links
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.navbar a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 50) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.classList.contains(current)) {
+      link.classList.add('active');
+    }
+  });
+});
+// Update scroll progress
+window.onscroll = function() {
+  const scrollTop = document.documentElement.scrollTop;
+  const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollProgress = (scrollTop / docHeight) * 100;
+  document.getElementById('scroll-progress').style.width = scrollProgress + '%';
+};
+function openLightbox() {
+  document.getElementById('lightbox').style.display = 'block';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+let slideIndex = 1;
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("lightbox-slides");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (let slide of slides) {
+    slide.style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+
   </script>
 </body>
 </html>
