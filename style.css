@@ -641,7 +641,7 @@ body {
 }
 
 .navbar-container {
-  width: 75%;
+  width: 100%;
   max-width: 1200px; /* Set the max-width for the navbar */
   display: flex;
   justify-content: space-between; /* Distribute navbar items evenly */
@@ -652,9 +652,9 @@ body {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   transition: color 0.3s;
-  font-size: 1.5vw; /* Shrink the font size proportionally to screen width */
+  font-size: 2vw; /* Shrink the font size proportionally to screen width */
 }
 
 .navbar a:hover {
@@ -671,7 +671,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 2rem; /* Reduced font size */
+  font-size: 2.4rem; /* Reduced font size */
   margin-bottom: 0.5rem;
 }
 
@@ -720,22 +720,22 @@ body {
   }
 
   .navbar-container {
-    width: 75%;
-    max-width: 75%; /* Ensure navbar container takes up full width on small screens */
+    width: 100%;
+    max-width: 100%; /* Ensure navbar container takes up full width on small screens */
     padding: 0 1rem; /* Add some padding for mobile screens */
   }
 
   .navbar a {
     margin: 0 0.8rem;
-    font-size: 4vw; /* Adjusted font size for mobile screens */
+    font-size: 5vw; /* Adjusted font size for mobile screens */
   }
 
   .hero h1 {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
 
   .cta-button {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     padding: 0.6rem 1.2rem;
   }
 
@@ -753,22 +753,22 @@ body {
   }
 
   .navbar-container {
-    width: 75%;
-    max-width: 75%; /* Full-width container */
+    width: 100%;
+    max-width: 100%; /* Full-width container */
     padding: 0 1rem; /* Add some padding */
   }
 
   .navbar a {
-    font-size: 3vw; /* Smaller font size for mobile */
+    font-size: 4vw; /* Smaller font size for mobile */
     margin: 0 0.6rem; /* Adjusted margin to prevent overflow */
   }
 
   .hero h1 {
-    font-size: 1rem; /* Smaller hero title on very small screens */
+    font-size: 1.8rem; /* Smaller hero title on very small screens */
   }
 
   .cta-button {
-    font-size: 0.6rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
   }
 
