@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eminent Square</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background: #fdfdfd;
+    }
+    .navbar {
+      background: #111;
+      padding: 1rem;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: #00ccff;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, #f9fafc, #eaf4ff);
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-style: italic;
+      color: #666;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .cta-button {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #005fa3;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .floorplans img {
+      width: 100%;
+      margin: 1rem 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .landmarks ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: white;
+      margin-top: 4rem;
+    }
+    .footer-links {
+      margin-top: 1rem;
+    }
+    .footer-links a {
+      color: #aaa;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: #fff;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #0055aa;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+    }
+    .lightbox:target {
+      display: block;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      color: white;
+      font-size: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .lightbox-close:hover {
+      color: #ffdddd;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Eminent Square</h1>
+      <p>A contemporary take on luxury city living</p>
+      <img src="images/IMG-20231023-WA0185.jpg" alt="Urban Residence Main Image">
+<a href="index.html#contact" class="cta-button">Book a Visit</a>
+    </section>
+
+    <section class="section">
+      <h2>About the Project</h2>
+      <p><strong>Design:</strong> Minimalist urban design with open-plan interiors and smart glass façades.</p>
+      <p><strong>Amenities:</strong> Rooftop garden, swimming pool, gym, co-working lounge, underground parking.</p>
+      <p><strong>Key Highlights:</strong> Solar-powered energy system, rainwater harvesting, modular interiors.</p>
+      <p><strong>Specialities:</strong> Award-winning design team, 24/7 security, premium eco-friendly materials.</p>
+    </section>
+
+    <section class="section">
+      <h2>Availability & Floor Plans</h2>
+      <p><strong>Status:</strong> Bookings Open (Only 3 Units Left!)</p>
+      <div class="floorplans">
+        <img src="images/floorplan1.jpg" alt="2 BHK Floor Plan">
+        <img src="images/floorplan2.jpg" alt="3 BHK Floor Plan">
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Project Gallery</h2>
+      <div class="gallery">
+        <a href="#img1"><img src="images/project1-1.jpg" alt="Living Room View"></a>
+        <a href="#img2"><img src="images/project1-2.jpg" alt="Exterior View"></a>
+        <a href="#img3"><img src="images/project1-3.jpg" alt="Rooftop Garden"></a>
+      </div>
+      <div id="img1" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img class="lightbox-content" src="images/project1-1.jpg" alt="Living Room View">
+      </div>
+      <div id="img2" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img class="lightbox-content" src="images/project1-2.jpg" alt="Exterior View">
+      </div>
+      <div id="img3" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img class="lightbox-content" src="images/project1-3.jpg" alt="Rooftop Garden">
+      </div>
+    </section>
+
+    <section class="section landmarks">
+      <h2>Landmarks & Neighborhood</h2>
+      <ul>
+        <li>2 min walk to Central Metro Station</li>
+        <li>500m from Greenfield Park</li>
+        <li>Close to Skyline Mall & Multiplex</li>
+        <li>Renowned International School within 1km</li>
+        <li>Multi-speciality hospital nearby</li>
+      </ul>
+    </section>
+
+    <div class="back-link">
+      <a href="index.html#projects">← Back to Projects</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Design Space. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Facebook</a>
+    </div>
+  </footer>
+</body>
+</html>
