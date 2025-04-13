@@ -641,7 +641,7 @@ body {
 }
 
 .navbar-container {
-  width: 100%;
+  width: 75%;
   max-width: 1200px; /* Set the max-width for the navbar */
   display: flex;
   justify-content: space-between; /* Distribute navbar items evenly */
@@ -720,8 +720,8 @@ body {
   }
 
   .navbar-container {
-    width: 100%;
-    max-width: 100%; /* Ensure navbar container takes up full width on small screens */
+    width: 75%;
+    max-width: 75%; /* Ensure navbar container takes up full width on small screens */
     padding: 0 1rem; /* Add some padding for mobile screens */
   }
 
@@ -753,8 +753,8 @@ body {
   }
 
   .navbar-container {
-    width: 100%;
-    max-width: 100%; /* Full-width container */
+    width: 75%;
+    max-width: 75%; /* Full-width container */
     padding: 0 1rem; /* Add some padding */
   }
 
