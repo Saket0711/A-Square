@@ -628,13 +628,22 @@ body {
 .navbar {
   background: #111;
   padding: 0.5rem 1rem; /* Reduced padding for a more compact header */
-  text-align: center;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for the header */
+  display: flex;
+  justify-content: center; /* Centers navbar content */
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px; /* Set the max-width for the navbar */
+  display: flex;
+  justify-content: space-between; /* Distribute navbar items evenly */
+  align-items: center;
 }
 
 .navbar a {
@@ -705,6 +714,12 @@ body {
     padding: 0.5rem 1rem;
   }
 
+  .navbar-container {
+    width: 100%;
+    max-width: 100%; /* Ensure navbar container takes up full width on small screens */
+    padding: 0 1rem; /* Add some padding for mobile screens */
+  }
+
   .navbar a {
     margin: 0 0.8rem;
     font-size: 0.9rem; /* Smaller font size for mobile */
@@ -727,6 +742,12 @@ body {
 @media (max-width: 480px) {
   .navbar {
     padding: 0.4rem 1rem; /* Further reduced padding for a compact mobile view */
+  }
+
+  .navbar-container {
+    width: 100%;
+    max-width: 100%; /* Full-width container */
+    padding: 0 1rem; /* Add some padding */
   }
 
   .navbar a {
