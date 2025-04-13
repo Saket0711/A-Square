@@ -652,7 +652,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
-  font-size: 1rem; /* Slightly smaller font size */
+  font-size: 1.2rem; /* Base font size */
 }
 
 .navbar a:hover {
@@ -722,7 +722,7 @@ body {
 
   .navbar a {
     margin: 0 0.8rem;
-    font-size: 0.9rem; /* Smaller font size for mobile */
+    font-size: 1rem; /* Adjusted font size for mobile screens */
   }
 
   .hero h1 {
@@ -751,7 +751,8 @@ body {
   }
 
   .navbar a {
-    font-size: 0.8rem; /* Smaller font size for mobile */
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    margin: 0 0.6rem; /* Adjusted margin to prevent overflow */
   }
 
   .hero h1 {
