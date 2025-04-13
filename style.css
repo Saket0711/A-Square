@@ -622,12 +622,18 @@ body {
   padding: 0;
   color: #222;
   background: #fdfdfd;
+  padding-top: 60px; /* Added padding to push content below fixed navbar */
 }
 
 .navbar {
   background: #111;
   padding: 1rem;
   text-align: center;
+  position: fixed;
+  width: 100%; /* Ensures the navbar takes full width */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Makes sure the navbar stays on top */
 }
 
 .navbar a {
@@ -647,6 +653,7 @@ body {
   padding: 2rem;
   background: linear-gradient(to right, #f9fafc, #eaf4ff);
   position: relative;
+  margin-top: 80px; /* Account for fixed navbar */
 }
 
 .hero h1 {
