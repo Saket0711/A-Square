@@ -623,6 +623,8 @@ body {
   color: #222;
   background: #fdfdfd;
   padding-top: 50px; /* Reduced padding-top to adjust for the header */
+  max-width: 100%; /* Ensures the body doesn't shrink */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .navbar {
@@ -665,6 +667,7 @@ body {
   background: linear-gradient(to right, #f9fafc, #eaf4ff);
   position: relative;
   margin-top: 70px; /* Reduced margin-top to accommodate the smaller header */
+  max-width: 100%; /* Ensure content width doesn’t shrink */
 }
 
 .hero h1 {
@@ -706,6 +709,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+  max-width: 100%; /* Make sure the grid spans the full width */
+  margin: auto;
 }
 
 /* Media Queries for smaller screens */
@@ -736,6 +741,9 @@ body {
 
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0 1rem; /* Adding some padding to grid items */
+    width: 100%;
+    max-width: 100%; /* Ensure the grid stretches to full width */
   }
 }
 
@@ -766,5 +774,8 @@ body {
 
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust grid items */
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem; /* Padding for smaller screens */
   }
 }
